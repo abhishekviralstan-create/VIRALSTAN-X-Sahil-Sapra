@@ -223,9 +223,9 @@ export default function CaseStudies() {
       <div className="container">
         <SectionHead
           center
-          eyebrow="Case Studies"
-          title={<>Real clients. <span className="grad-text">Real results.</span></>}
-          sub="Healthcare brands we grow online. Click a folder to open the full case study."
+          eyebrow="Industry sectors"
+          title={<>Marketing support for Indian <span className="grad-text">manufacturers.</span></>}
+          sub="Explore the sectors we support with brand building, digital presence and sales-ready marketing assets."
         />
         <div className={`folder-grid ${PROJECTS.length < 3 ? "few" : ""}`} style={{ "--n": PROJECTS.length }}>
           {PROJECTS.map((p, i) => <Folder key={p.id} p={p} i={i} onOpen={setOpen} />)}

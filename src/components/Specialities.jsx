@@ -11,8 +11,8 @@ export default function Specialities() {
         <SectionHead
           center
           eyebrow="Specialities we serve"
-          title={<>Built for your speciality, <span className="grad-text">not a generic template.</span></>}
-          sub="Every speciality has different patients, questions and ad rules. We plan content and campaigns around yours."
+          title={<>Built around your customers, <span className="grad-text">not a generic package.</span></>}
+          sub="Choose from practical services that help your customers move from product idea to a market-ready brand."
         />
         <div className="spec-grid">
           {SPECIALITIES.map((s, i) => (

@@ -32,8 +32,8 @@ export function Thanks() {
           ))}
         </h2>
         <Reveal as="p" className="thanks-text" delay={0.4}>
-          Thank you for taking the time to explore our work. Every clinic and brand in this portfolio trusted us with its growth,
-          and we are grateful to each of them. We would love to help your clinic write its next chapter.
+          Thank you for taking the time to explore the partnership. We help manufacturers offer more to their customers,
+          without building a full marketing team in-house.
         </Reveal>
         <Reveal as="p" className="thanks-sign" delay={0.55}>— Team Viralstan</Reveal>
       </div>

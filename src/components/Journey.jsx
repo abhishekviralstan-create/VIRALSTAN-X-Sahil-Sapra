@@ -3,7 +3,7 @@ import { motion, useMotionValueEvent, useScroll, useSpring } from "framer-motion
 import { EASE, Icon, SectionHead } from "./shared";
 import { PROCESS } from "../data/content";
 
-const BADGES = ["search", "map", "play", "chart"];
+const BADGES = ["search", "map", "play", "chart", "eye", "target"];
 
 // Builds the curvy road path that zig-zags between the milestone cards.
 function buildRoad(container, cards) {
@@ -54,8 +54,8 @@ export default function Journey() {
         <SectionHead
           center
           eyebrow="How we work"
-          title={<>From first audit <span className="grad-text">to a full clinic.</span></>}
-          sub="A simple four-step process that turns your clinic’s online presence into a steady flow of new patients."
+          title={<>A simple process <span className="grad-text">from start to finish.</span></>}
+          sub="Choose the services, agree the terms, let Viralstan execute and continue growing the partnership."
         />
         <div className="roadmap" ref={ref}>
           <svg className="road-svg" aria-hidden="true">

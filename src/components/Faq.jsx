@@ -10,9 +10,9 @@ export default function Faq() {
     <section className="section faq" id="faq">
       <div className="container faq-layout">
         <SectionHead
-          eyebrow="Questions doctors ask"
+          eyebrow="Questions manufacturers ask"
           title={<>Good questions, <span className="grad-text">straight answers.</span></>}
-          sub="Everything clinics usually ask before working with us. Still unsure? Message us and we will reply the same day."
+          sub="Everything businesses usually ask before working with us. Still unsure? Message us and we will reply."
         />
         <div className="faq-list">
           {FAQS.map((f, i) => {

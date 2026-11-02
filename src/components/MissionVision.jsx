@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { EASE, Icon, SectionHead } from "./shared";
 import { MISSION_VISION } from "../data/content";
 
-const ICONS = { Mission: "target", Vision: "eye" };
+const ICONS = { "The idea": "star", "The outcome": "target" };
 
 export default function MissionVision() {
   return (

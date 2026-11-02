@@ -43,6 +43,7 @@ const icons = {
   chart: <><path d="M3 3v18h18" /><path d="m7 15 4-4 3 3 6-7" /><path d="M16 7h4v4" /></>,
   star: <path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z" />,
   code: <path d="m16 18 6-6-6-6M8 6l-6 6 6 6M14 4l-4 16" />,
+  file: <><path d="M6 2h8l4 4v16H6z" /><path d="M14 2v5h5M9 13h6M9 17h6" /></>,
   pen: <><path d="M12 19l7-7 3 3-7 7-3-3z" /><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z" /><circle cx="11" cy="11" r="2" /></>,
   play: <><rect x="2" y="4" width="20" height="16" rx="3" /><path d="m10 9 5 3-5 3z" /></>,
   pin: <><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z" /><circle cx="12" cy="10" r="3" /></>,

@@ -14,6 +14,7 @@ import Specialities from "./components/Specialities";
 import Faq from "./components/Faq";
 import Contact from "./components/Contact";
 import { Review, Thanks } from "./components/Closing";
+import { REELS } from "./data/content";
 import "./styles.css";
 import "./clinic.css";
 
@@ -53,7 +54,7 @@ function App() {
         <Specialities />
         <Services />
         <CaseStudies />
-        <Reels />
+        {REELS.length > 0 && <Reels />}
         <Testimonials />
         <Faq />
         <Contact />

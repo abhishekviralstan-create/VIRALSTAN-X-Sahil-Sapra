@@ -7,7 +7,7 @@ const AUDIT_POINTS = [
   "Google Business Profile & Maps ranking check",
   "Website speed, booking flow and SEO review",
   "Social media and competitor comparison",
-  "A clear list of quick wins for your clinic",
+  "A clear partnership model for your business",
 ];
 
 const EMPTY = { name: "", clinic: "", phone: "", speciality: "", goals: [] };
@@ -22,11 +22,11 @@ export default function Contact() {
 
   const whatsappText = () =>
     [
-      `Hi Viralstan, I'd like a free clinic audit.`,
+      `Hi Viralstan, I'd like to discuss the manufacturer partnership.`,
       `Name: ${form.name}`,
-      `Clinic & city: ${form.clinic}`,
+      `Company & city: ${form.clinic}`,
       `Phone: ${form.phone}`,
-      form.speciality && `Speciality: ${form.speciality}`,
+      form.speciality && `Services required: ${form.speciality}`,
       form.goals.length && `Looking for: ${form.goals.join(", ")}`,
     ]
       .filter(Boolean)
@@ -74,11 +74,10 @@ export default function Contact() {
           <span className="review-orb o1" />
           <span className="review-orb o2" />
           <div className="contact-copy">
-            <span className="review-eyebrow">Free clinic audit</span>
+            <span className="review-eyebrow">Discuss the partnership</span>
             <h2>Let’s fill your appointment book.</h2>
             <p>
-              Share a few details and we will send you a free audit of your clinic’s online presence, with clear next
-              steps. No obligation.
+              Share a few details and we will discuss the right white-label services, charges and working model for your business.
             </p>
             <ul className="contact-points">
               {AUDIT_POINTS.map((p) => (
@@ -110,12 +109,12 @@ export default function Contact() {
                 >
                   ✓
                 </motion.span>
-                <h3>Thank you, {form.name.split(" ").slice(0, 2).join(" ") || "Doctor"}!</h3>
-                <p>We have received your details. Our healthcare team will reach out within one working day with your free clinic audit.</p>
+                <h3>Thank you, {form.name.split(" ").slice(0, 2).join(" ") || "there"}!</h3>
+                <p>We have received your details. Our team will reach out within one working day to discuss the partnership.</p>
                 <button type="button" className="contact-submit" onClick={openWhatsApp}>
                   <Icon name="chat" /> Chat with us on WhatsApp
                 </button>
-                <button type="button" className="contact-again" onClick={reset}>Submit another clinic</button>
+                <button type="button" className="contact-again" onClick={reset}>Submit another enquiry</button>
               </motion.div>
             ) : (
               <motion.form key="form" className="contact-form" onSubmit={onSubmit} exit={{ opacity: 0, scale: 0.96 }}>
@@ -124,17 +123,17 @@ export default function Contact() {
                   <input required value={form.name} onChange={set("name")} placeholder="Dr. Your Name" />
                 </label>
                 <label>
-                  Clinic name & city
-                  <input required value={form.clinic} onChange={set("clinic")} placeholder="Smile Dental, Ludhiana" />
+                  Company name & city
+                  <input required value={form.clinic} onChange={set("clinic")} placeholder="Your Manufacturing Company" />
                 </label>
                 <label>
                   Phone / WhatsApp
                   <input required type="tel" value={form.phone} onChange={set("phone")} placeholder="+91 98765 43210" />
                 </label>
                 <label>
-                  Speciality
+                  Services you need
                   <select value={form.speciality} onChange={set("speciality")}>
-                    <option value="">Select your speciality</option>
+                    <option value="">Select a service</option>
                     {SPECIALITIES.map((s) => <option key={s.name}>{s.name}</option>)}
                     <option>Other</option>
                   </select>
@@ -162,7 +161,7 @@ export default function Contact() {
                   whileHover={{ scale: 1.03 }}
                   whileTap={{ scale: 0.97 }}
                 >
-                  {status === "sending" ? "Sending…" : <>Get my free clinic audit <span aria-hidden="true">→</span></>}
+                  {status === "sending" ? "Sending…" : <>Discuss the partnership <span aria-hidden="true">→</span></>}
                 </motion.button>
                 {status === "error" ? (
                   <small className="contact-error">
