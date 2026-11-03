@@ -4,13 +4,11 @@ import { MotionConfig, motion, useMotionValue, useScroll, useSpring } from "fram
 import Intro from "./components/Intro";
 import Hero from "./components/Hero";
 import About from "./components/About";
-import MissionVision from "./components/MissionVision";
 import Journey from "./components/Journey";
 import Services from "./components/Services";
 import Reels from "./components/Reels";
-import Testimonials from "./components/Testimonials";
 import Specialities from "./components/Specialities";
-import Faq from "./components/Faq";
+import Pricing from "./components/Pricing";
 import Contact from "./components/Contact";
 import { Review, Thanks } from "./components/Closing";
 import { REELS } from "./data/content";
@@ -48,13 +46,11 @@ function App() {
       <main>
         <Hero />
         <About />
-        <MissionVision />
         <Journey />
         <Specialities />
         <Services />
+        <Pricing />
         {REELS.length > 0 && <Reels />}
-        <Testimonials />
-        <Faq />
         <Contact />
         <Thanks />
         <Review />
