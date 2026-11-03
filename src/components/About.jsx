@@ -21,8 +21,8 @@ export default function About() {
     <section className="section" id="about">
       <div className="container">
         <SectionHead
-          eyebrow="One partnership. More value for your customers."
-          title={<>Your customers need more than manufacturing. <span className="grad-text">Give them the full route to market.</span></>}
+          eyebrow="Viralstan × Sahil Sapra — one system, real results."
+          title={<>More than just marketing. <span className="grad-text">A complete growth engine built for Sahil Sapra.</span></>}
         />
         <div className="ww-grid">
           <p className="ww-statement" ref={ref}>

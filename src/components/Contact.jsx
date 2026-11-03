@@ -7,7 +7,7 @@ const AUDIT_POINTS = [
   "Google Business Profile & Maps ranking check",
   "Website speed, booking flow and SEO review",
   "Social media and competitor comparison",
-  "A clear partnership model for your business",
+  "A clear growth plan for Hills & Co Realty",
 ];
 
 const EMPTY = { name: "", clinic: "", phone: "", speciality: "", goals: [] };
@@ -22,7 +22,7 @@ export default function Contact() {
 
   const whatsappText = () =>
     [
-      `Hi Viralstan, I'd like to discuss the manufacturer partnership.`,
+      `Hi Viralstan, I'd like to discuss the Hills & Co Realty real estate growth plan.`,
       `Name: ${form.name}`,
       `Company & city: ${form.clinic}`,
       `Phone: ${form.phone}`,
@@ -74,10 +74,10 @@ export default function Contact() {
           <span className="review-orb o1" />
           <span className="review-orb o2" />
           <div className="contact-copy">
-            <span className="review-eyebrow">Discuss the partnership</span>
+            <span className="review-eyebrow">Start the 90-day growth plan</span>
             <h2>Let’s fill your appointment book.</h2>
             <p>
-              Share a few details and we will discuss the right white-label services, charges and working model for your business.
+              Share a few details and we will discuss the right buyer, seller and local-growth strategy for Hills & Co Realty.
             </p>
             <ul className="contact-points">
               {AUDIT_POINTS.map((p) => (
@@ -110,7 +110,7 @@ export default function Contact() {
                   ✓
                 </motion.span>
                 <h3>Thank you, {form.name.split(" ").slice(0, 2).join(" ") || "there"}!</h3>
-                <p>We have received your details. Our team will reach out within one working day to discuss the partnership.</p>
+                <p>We have received your details. Our team will reach out within one working day to discuss the Sydney real estate growth plan.</p>
                 <button type="button" className="contact-submit" onClick={openWhatsApp}>
                   <Icon name="chat" /> Chat with us on WhatsApp
                 </button>
@@ -133,7 +133,7 @@ export default function Contact() {
                 <label>
                   Services you need
                   <select value={form.speciality} onChange={set("speciality")}>
-                    <option value="">Select a service</option>
+                    <option value="">Select a growth goal</option>
                     {SPECIALITIES.map((s) => <option key={s.name}>{s.name}</option>)}
                     <option>Other</option>
                   </select>

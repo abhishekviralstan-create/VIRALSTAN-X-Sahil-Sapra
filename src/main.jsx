@@ -7,7 +7,6 @@ import About from "./components/About";
 import MissionVision from "./components/MissionVision";
 import Journey from "./components/Journey";
 import Services from "./components/Services";
-import CaseStudies from "./components/CaseStudies";
 import Reels from "./components/Reels";
 import Testimonials from "./components/Testimonials";
 import Specialities from "./components/Specialities";
@@ -53,7 +52,6 @@ function App() {
         <Journey />
         <Specialities />
         <Services />
-        <CaseStudies />
         {REELS.length > 0 && <Reels />}
         <Testimonials />
         <Faq />

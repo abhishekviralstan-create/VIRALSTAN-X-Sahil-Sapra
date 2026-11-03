@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { EASE, Icon, SectionHead } from "./shared";
 import { MISSION_VISION } from "../data/content";
 
-const ICONS = { "The idea": "star", "The outcome": "target" };
+const ICONS = { "Our mission": "star", "Our outcome": "target" };
 
 export default function MissionVision() {
   return (
@@ -35,7 +35,7 @@ export default function MissionVision() {
               >
                 <Icon name={ICONS[m.label]} />
               </motion.span>
-              <span className="mv-label">Our {m.label}</span>
+              <span className="mv-label">{m.label}</span>
               <p>{m.text}</p>
               <span className="mv-num">0{i + 1}</span>
             </motion.article>

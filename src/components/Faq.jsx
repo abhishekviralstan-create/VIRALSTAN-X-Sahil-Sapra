@@ -10,7 +10,7 @@ export default function Faq() {
     <section className="section faq" id="faq">
       <div className="container faq-layout">
         <SectionHead
-          eyebrow="Questions manufacturers ask"
+          eyebrow="Questions Hills & Co Realty should ask"
           title={<>Good questions, <span className="grad-text">straight answers.</span></>}
           sub="Everything businesses usually ask before working with us. Still unsure? Message us and we will reply."
         />

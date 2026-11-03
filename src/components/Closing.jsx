@@ -32,7 +32,7 @@ export function Thanks() {
           ))}
         </h2>
         <Reveal as="p" className="thanks-text" delay={0.4}>
-          Thank you for taking the time to explore the partnership. We help manufacturers offer more to their customers,
+          Thank you for taking the time to explore the growth plan. We help real estate brands build visibility, trust and qualified enquiries,
           without building a full marketing team in-house.
         </Reveal>
         <Reveal as="p" className="thanks-sign" delay={0.55}>— Team Viralstan</Reveal>

@@ -10,9 +10,9 @@ export default function Specialities() {
       <div className="container">
         <SectionHead
           center
-          eyebrow="Specialities we serve"
-          title={<>Built around your customers, <span className="grad-text">not a generic package.</span></>}
-          sub="Choose from practical services that help your customers move from product idea to a market-ready brand."
+          eyebrow="What Viralstan does for Sahil Sapra"
+          title={<>Five services. One complete <span className="grad-text">real estate growth system.</span></>}
+          sub="From a fast SEO website and AI Reels to video editing, a dedicated caller and local SEO — every piece works together to grow Sahil's business."
         />
         <div className="spec-grid">
           {SPECIALITIES.map((s, i) => (

@@ -55,7 +55,7 @@ export default function Journey() {
           center
           eyebrow="How we work"
           title={<>A simple process <span className="grad-text">from start to finish.</span></>}
-          sub="Choose the services, agree the terms, let Viralstan execute and continue growing the partnership."
+          sub="Audit the market, launch the content and campaigns, measure lead quality, and scale what works over 90 days."
         />
         <div className="roadmap" ref={ref}>
           <svg className="road-svg" aria-hidden="true">
